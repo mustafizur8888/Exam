@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Exam.Model
 {
-    class BusinessDbContext : DbContext
+    public class BusinessDbContext : DbContext
     {
         public BusinessDbContext() : base("DefaultConnection")
         {

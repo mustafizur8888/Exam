@@ -236,7 +236,9 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -256,6 +258,9 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Index.html" />
+    <Content Include="partials\home\home.tpl.html" />
+    <Content Include="partials\student\student-entry.tpl.html" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="Scripts\angular-animate.js" />
@@ -1108,6 +1113,11 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="App\App.Config.ts" />
+    <TypeScriptCompile Include="App\home\HomeController.ts" />
+    <TypeScriptCompile Include="App\Model\Models.ts" />
+    <TypeScriptCompile Include="App\Student\StudentController.ts" />
+    <TypeScriptCompile Include="App\Student\StudentService.ts" />
     <TypeScriptCompile Include="Scripts\typings\angular-ui-router\angular-ui-router.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-component-router.d.ts" />
@@ -1122,6 +1132,16 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Exam.Model\Exam.Model.csproj">
+      <Project>{1E71C42A-4344-483D-9B06-AC3F73A6A3A2}</Project>
+      <Name>Exam.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Exam.Service\Exam.Service.csproj">
+      <Project>{ea488d3b-29fc-44de-8e56-c2ca2ffbbc01}</Project>
+      <Name>Exam.Service</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

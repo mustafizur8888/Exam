@@ -51,17 +51,14 @@
   <ItemGroup>
     <Compile Include="BusinessDbContext.cs" />
     <Compile Include="Entity.cs" />
-    <Compile Include="Migrations\201604201708497_DbSetup.cs" />
-    <Compile Include="Migrations\201604201708497_DbSetup.Designer.cs">
-      <DependentUpon>201604201708497_DbSetup.cs</DependentUpon>
+    <Compile Include="ExamClass.cs" />
+    <Compile Include="Migrations\201604270221088_exam1.cs" />
+    <Compile Include="Migrations\201604270221088_exam1.Designer.cs">
+      <DependentUpon>201604270221088_exam1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201604210202194_Table Name property Added.cs" />
-    <Compile Include="Migrations\201604210202194_Table Name property Added.Designer.cs">
-      <DependentUpon>201604210202194_Table Name property Added.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201604251716223_check asp.Indentity.cs" />
-    <Compile Include="Migrations\201604251716223_check asp.Indentity.Designer.cs">
-      <DependentUpon>201604251716223_check asp.Indentity.cs</DependentUpon>
+    <Compile Include="Migrations\201604281856297_add extra field.cs" />
+    <Compile Include="Migrations\201604281856297_add extra field.Designer.cs">
+      <DependentUpon>201604281856297_add extra field.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Student.cs" />
@@ -72,14 +69,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201604201708497_DbSetup.resx">
-      <DependentUpon>201604201708497_DbSetup.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201604270221088_exam1.resx">
+      <DependentUpon>201604270221088_exam1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604210202194_Table Name property Added.resx">
-      <DependentUpon>201604210202194_Table Name property Added.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604251716223_check asp.Indentity.resx">
-      <DependentUpon>201604251716223_check asp.Indentity.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201604281856297_add extra field.resx">
+      <DependentUpon>201604281856297_add extra field.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

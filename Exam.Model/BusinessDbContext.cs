@@ -15,5 +15,6 @@ namespace Exam.Model
         }
 
         public DbSet<Student> Students { get; set; }
+        public DbSet<ExamClass> Exams { get; set; }
     }
 }

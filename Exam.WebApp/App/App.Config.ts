@@ -24,11 +24,21 @@
                 templateUrl: "partials/student/student-entry.tpl.html",
                 controller: "StudentController",
                 controllerAs: "vm"
+            }).state("root.signin", {
+                url: "/signin",
+                templateUrl: "partials/account/signin.tpl.html",
+                controller: "SigninController",
+                controllerAs: "vm"
+            }).state("root.registration", {
+                url: "/registration",
+                templateUrl: "partials/account/registration.tpl.html",
+                controller: "RegistrationController",
+                controllerAs: "vm"
             });
         }
     }
 
-    angular.module("app", ["ui.router", "ngResource"]);
+    angular.module("app", ["ui.router", "ngResource","LocalStorageModule"]);
     angular.module("app").config(AppConfig);
 
 }

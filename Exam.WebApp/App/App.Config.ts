@@ -34,6 +34,16 @@
                 templateUrl: "partials/account/registration.tpl.html",
                 controller: "RegistrationController",
                 controllerAs: "vm"
+            }).state("root.service-setup", {
+                url: "/service-setup",
+                templateUrl: "partials/adminservice/service-setup.tpl.html",
+                controller: "AdminServiceController",
+                controllerAs: "vm"
+            }).state("root.service-list", {
+                url: "/service-list",
+                templateUrl: "partials/adminservice/service-list.tpl.html",
+                controller: "AdminServiceQueryController",
+                controllerAs: "vm"
             });
         }
     }

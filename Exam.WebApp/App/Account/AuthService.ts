@@ -22,6 +22,10 @@
             var self = this;
             self.localStorageService.set("AccountInfo", self.AccountInfo);
         }
+        FillAuthData(): void {
+            var self = this;
+            self.AccountInfo = <any>self.localStorageService.get("AccountInfo");
+        }
     }
 
     angular.module("app").service("AuthService", AuthService);

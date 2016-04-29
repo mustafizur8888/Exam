@@ -49,9 +49,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminService.cs" />
     <Compile Include="BusinessDbContext.cs" />
     <Compile Include="Entity.cs" />
-    <Compile Include="ExamClass.cs" />
     <Compile Include="Migrations\201604270221088_exam1.cs" />
     <Compile Include="Migrations\201604270221088_exam1.Designer.cs">
       <DependentUpon>201604270221088_exam1.cs</DependentUpon>
@@ -59,6 +59,14 @@
     <Compile Include="Migrations\201604281856297_add extra field.cs" />
     <Compile Include="Migrations\201604281856297_add extra field.Designer.cs">
       <DependentUpon>201604281856297_add extra field.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604290059489_admin service.cs" />
+    <Compile Include="Migrations\201604290059489_admin service.Designer.cs">
+      <DependentUpon>201604290059489_admin service.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604290117137_admin servicev2.cs" />
+    <Compile Include="Migrations\201604290117137_admin servicev2.Designer.cs">
+      <DependentUpon>201604290117137_admin servicev2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Student.cs" />
@@ -74,6 +82,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604281856297_add extra field.resx">
       <DependentUpon>201604281856297_add extra field.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604290059489_admin service.resx">
+      <DependentUpon>201604290059489_admin service.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604290117137_admin servicev2.resx">
+      <DependentUpon>201604290117137_admin servicev2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

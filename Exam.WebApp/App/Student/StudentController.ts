@@ -3,7 +3,7 @@
     export class StudentController {
         Student: Student;
         private studentService: StudentService;
-        private stateParamService: angular.ui.IStateParamsService;
+       // private stateParamService: angular.ui.IStateParamsService;
         static $inject = ["StudentService"];
         constructor(studentService: StudentService) {
             this.Student = new Student();

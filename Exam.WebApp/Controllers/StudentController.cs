@@ -12,7 +12,7 @@ namespace Exam.WebApp.Controllers
 {
     public class StudentController : BaseController<Student>
     {
-        public StudentController() : base(new BaseService<Student>(new StudentRepository(new BusinessDbContext())))  
+        public StudentController() : base(new BaseService<Student>(new StudentRepository(new BusinessDbContext())))
         {
         }
     }

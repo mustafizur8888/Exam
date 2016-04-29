@@ -208,6 +208,8 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminServiceController.cs" />
+    <Compile Include="Controllers\AdminServiceQueryController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PublicResourcesController.cs" />
@@ -233,6 +235,8 @@
     <Content Include="Index.html" />
     <Content Include="partials\account\registration.tpl.html" />
     <Content Include="partials\account\signin.tpl.html" />
+    <Content Include="partials\adminservice\service-list.tpl.html" />
+    <Content Include="partials\adminservice\service-setup.tpl.html" />
     <Content Include="partials\home\home.tpl.html" />
     <Content Include="partials\student\student-entry.tpl.html" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
@@ -1073,6 +1077,9 @@
     <TypeScriptCompile Include="App\Account\AuthService.ts" />
     <TypeScriptCompile Include="App\Account\RegistrationController.ts" />
     <TypeScriptCompile Include="App\Account\SigninController.ts" />
+    <TypeScriptCompile Include="App\AdminService\AdminServiceQueryController.ts" />
+    <TypeScriptCompile Include="App\AdminService\AdminServiceController.ts" />
+    <TypeScriptCompile Include="App\AdminService\AdminServiceService.ts" />
     <TypeScriptCompile Include="App\App.Config.ts" />
     <TypeScriptCompile Include="App\home\HomeController.ts" />
     <TypeScriptCompile Include="App\Model\Models.ts" />
